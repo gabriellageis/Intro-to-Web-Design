@@ -1,0 +1,127 @@
+/* Stylesheet for Website Layout Assignment */
+
+/* layout for mobile device */
+
+h1, h2, p, li {
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+img {
+    padding: 10px;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+}
+a:link, a:visited {
+    text-decoration: underline;
+}
+a:hover {
+    color: #383270;
+     background: #b8c3ff;
+}
+a:active {
+ text-decoration: line-through;
+}
+p {
+    padding: 10px;
+    margin-top: 0;
+}
+img.essays {
+    width: 50%;
+    height: auto;
+}
+img.woman, img#foxybrownposter, img.whitened {
+    width: 70%;
+    height: auto;
+}
+img#bealeposter {
+    width: 90%;
+    height: auto;
+}
+
+/* media query for desktop */
+@media (min-width:30em) {
+    #header {grid-area: a;}
+    #baldwin-image {grid-area: b;}
+    #baldwin-paragraph {grid-area: c;}
+    #baldwin-additional {grid-area: d;}
+    #baldwinessays {grid-area: e;}
+    #footer1 {grid-area: f;}
+    #womanpic {grid-area: g;}
+    #foxy-p1 {grid-area: h;}
+    #foxyposter {grid-area: i;}
+    #foxy-p2 {grid-area: j;}
+    #foxywhitened {grid-area: k;}
+    #foxy-p3 {grid-area: l;}
+    #footer2 {grid-area: m;}
+    #bealestreet{grid-area: n;}
+    #beale-p1 {grid-area: o;}
+    #beale-p2 {grid-area: p;}
+    #footer3 {grid-area: q;}
+    #title1 {grid-area: r;}
+    #title2 {grid-area: s;}
+    #title3 {grid-area: t;}
+
+    #container1, #container2, #container3 {
+        width: 940px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
+
+    #container1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 1em;
+        grid-template-areas:
+            'a a a a'
+            'r r r r'
+            'b b c c'
+            'd d d e'
+            'f f f f'
+    }
+    #container2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 1em;
+        grid-template-areas:
+            'a a a a'
+            's s s s'
+            'g g h h'
+            'j j i i'
+            'k k l l'
+            'm m m m'
+    }
+    #container3 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        row-gap: 1em;
+        grid-template-areas:
+            'a a a a'
+            't t t t'
+            'n n o o'
+            'n n o o'
+            'p p p p'
+            'q q q q'
+    }
+    ul.nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    li.nav-item {
+        margin-right: 2%;
+        display: inline-block;
+    }
+}
+
